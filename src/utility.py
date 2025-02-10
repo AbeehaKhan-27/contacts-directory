@@ -3,13 +3,13 @@ def display_people(people):
         print(i + 1, "-", person ["name"], "|", person ["age"], "|", person ["email"])
 
 def add_person():
-    for i in range(3):
-        name = input("Name: ")
-        age = input("Age: ")
-        email = input("Email: ")
+    name = input("Name: ")
+    age = input("Age: ")
+    birthday = input("Birthday: ")
+    email = input("Email: ")
 
-        person = {"name": name, "age": age, "email": email}
-        return person
+    person = {"name": name, "age": age, "birthday": birthday, "email": email}
+    return person
     
 def delete_contact(people):
     display_people(people)
